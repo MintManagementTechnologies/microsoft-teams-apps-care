@@ -1,0 +1,5 @@
+DHSApi/bin/*
+DHSApi/obj/*
+/DHSApi/Properties
+.vs/*
+/.vs/*

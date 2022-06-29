@@ -1,0 +1,65 @@
+.mmt-statusPillGroup {
+   .mmt-statusPill {
+      width: 25%;
+      box-shadow: none;
+      // cursor: pointer;
+      .ui-pillcontent {
+         padding-left: 0px;
+         padding-right: 0px;
+      }
+      .ui-pill__icon,
+      .ui-pill__action {
+         display: none;
+      }
+   }
+}
+
+.ui-pill {
+   .ui-pillcontent {
+      width: 100%;
+      text-align: center;
+      font-size: 11px;
+      font-weight: 600;
+   }
+
+   &.mmt-statusPill {
+      color: white;
+      min-width: 110px !important;
+      max-height: 24px !important;
+      margin-left: 0px;
+      &.mmt-opened,
+      &.mmt-opened:hover {
+         background-color: #aaadc4;
+      }
+      &.mmt-resolved,
+      &.mmt-resolved:hover {
+         background-color: #c0da74;
+      }
+      &.mmt-inProgress,
+      &.mmt-inProgress:hover {
+         background-color: #ff8d23;
+      }
+      &.mmt-closed,
+      &.mmt-closed:hover {
+         background-color: #669bbc;
+      }
+
+      &.mmt-inactive,
+      &.mmt-inactive:hover {
+         cursor: pointer;
+         background-color: #dfdfdf;
+         &.mmt-opened:hover {
+            background-color: #aaadc4;
+         }
+         &.mmt-resolved:hover {
+            background-color: #c0da74;
+         }
+         &.mmt-inProgress:hover {
+            background-color: #ff8d23;
+         }
+         &.mmt-closed:hover {
+            background-color: #669bbc;
+         }
+      }
+   }
+}

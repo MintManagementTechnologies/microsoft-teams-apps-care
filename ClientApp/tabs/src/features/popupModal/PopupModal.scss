@@ -1,0 +1,138 @@
+#root {
+   .mmt-layout {
+      .mmt-taskModule {
+         overflow-y: scroll;
+         overflow-x: clip;
+         .mmt-taskModule-body {
+            height: auto;
+            &.mmt-viewingOnly {
+               .mmt-inputGroup {
+                  label {
+                     font-weight: 600;
+                  }
+                  textarea,
+                  input,
+                  .ui-dropdown__container,
+                  .ui-dropdown__selected-items * {
+                     font-weight: normal;
+                     background-color: transparent;
+                     padding-left: 0px;
+
+                     .ui-dropdown__toggle-indicator {
+                        display: none;
+                     }
+                  }
+               }
+            }
+
+            // .mmt-inputGroup {
+            //    padding-bottom: 10px;
+            //    padding-top: 10px;
+            //    // font-size: 0.85em;
+            //    // font-weight: 600;
+
+            ::placeholder {
+               // font-size: 14px;
+               color: #b6b5b5;
+            }
+
+            //    .ui-form__label {
+            //       font-weight: 600;
+            //    }
+
+            .ui-dropdown {
+               .ui-button {
+                  .ui-button__content {
+                     font-weight: normal;
+                  }
+               }
+            }
+
+            // .mmt-form-row-title {
+            //    margin-bottom: 10px;
+            // }
+
+            // .ui-attachment {
+            //    width: 100%;
+            //    max-width: 460px;
+            // }
+
+            .mmt-fieldviewGroup {
+               .mmt-label {
+                  font-size: 12px
+               }
+               .ui-textarea {
+                  padding: 0px;
+                  margin-top: 2px;
+                  background-color: transparent;
+                  height: 100%;
+               }
+            }
+         }
+
+         .mmt-footer-container {
+            // background-color: transparent !important;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            left: 0;
+            // padding-left: 20px;
+            padding-right: 48px !important;
+            box-shadow: 0px -4px 7px -1px rgba(0, 0, 0, 0.25);
+            -webkit-box-shadow: 0px -4px 7px -1px rgba(0, 0, 0, 0.25);
+            -moz-box-shadow: 0px -4px 7px -1px rgba(0, 0, 0, 0.25);
+         }
+      }
+      &.mmt-customer-search {
+         .mmt-taskModule-body {
+            margin-bottom: 0px;
+         }
+
+         .mmt-footer-container {
+            padding-right: 30px !important;
+            box-shadow: none !important;
+            border-top: 0px solid rgba(0, 0, 0, 0);
+         }
+      }
+   }
+}
+
+.mmt-default {
+   .mmt-taskModule-body {
+      .mmt-fieldviewGroup {
+         .mmt-value {
+            // font-size: 14px
+            color: #757575;
+         }
+      }
+   }
+   .mmt-footer-container {
+      // background-color: rgb(243, 242, 241);
+      border-top: 1px solid rgba(0, 0, 0, 0.15);
+   }
+}
+
+.mmt-dark {
+   .mmt-taskModule-body {
+      .mmt-fieldviewGroup {
+         .ui-textarea {
+            color: rgb(200, 198, 196);
+         }
+      }
+   }
+   .mmt-footer-container {
+      // background-color: rgb(32, 31, 31);
+   }
+}
+
+// .mmt-taskModule-footer {
+// 	// height: 60px;
+// 	padding-top: 20px !important;
+// 	padding-bottom: 20px !important;
+// 	position: fixed;
+// 	bottom: 0;
+// 	width: 100%;
+// 	left: 0;
+// 	// padding-left: 20px;
+// 	padding-right: 20px !important;
+// }

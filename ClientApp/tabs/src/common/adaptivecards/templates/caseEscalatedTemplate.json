@@ -1,0 +1,77 @@
+{
+    "type": "AdaptiveCard",
+    "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+    "version": "1.3",
+    "body": [
+        {
+            "type": "Container",
+            "items": [
+                {
+                    "type": "TextBlock",
+                    "text": "Escalated Case",
+                    "wrap": true
+                }
+            ]
+        },
+        {
+            "type": "Container",
+            "items": [
+                {
+                    "type": "TextBlock",
+                    "text": "Case No: ${CaseNo} has been escalated to you!",
+                    "wrap": true,
+                    "size": "Large",
+                    "color": "Accent"
+                },
+                {
+                    "type": "TextBlock",
+                    "text": "Escalated by: ${AssignedBy}",
+                    "wrap": true
+                }
+            ]
+        },
+        {
+            "type": "FactSet",
+            "facts": [
+                {
+                    "title": "Requester",
+                    "value": "${Requestor}"
+                },
+                {
+                    "title": "Assigned To",
+                    "value": "${AssignedTo}"
+                },
+                {
+                    "title": "Type",
+                    "value": "${Type}"
+                }
+            ]
+        },
+        {
+            "type": "Image",
+            "url": "${StatusImage}",
+            "spacing": "Small",
+            "horizontalAlignment": "Center",
+            "size": "Large",
+            "width": "146px",
+            "height": "24px"
+        },
+        {
+            "type": "ActionSet",
+            "actions": [
+                {
+                    "type": "Action.OpenUrl",
+                    "title": "View Details",
+                    "url": "${ViewUrl}"
+                },
+                {
+                    "type": "Action.OpenUrl",
+                    "title": "Respond",
+                    "url": "${RespondUrl}"
+                }
+            ],
+            "spacing": "Medium",
+            "horizontalAlignment": "Right"
+        }
+    ]
+}

@@ -1,0 +1,98 @@
+{
+    "$schema": "https://developer.microsoft.com/en-us/json-schemas/teams/v1.11/MicrosoftTeams.schema.json",
+    "manifestVersion": "1.11",
+    "version": "1.0.0",
+    "id": "{{state.fx-resource-appstudio.teamsAppId}}",
+    "packageName": "com.microsoft.teams.extension",
+    "developer": {
+        "name": "Mint Management Technologies",
+        "websiteUrl": "{{{state.fx-resource-frontend-hosting.endpoint}}}",
+        "privacyUrl": "{{{state.fx-resource-frontend-hosting.endpoint}}}{{{state.fx-resource-frontend-hosting.indexPath}}}/privacy",
+        "termsOfUseUrl": "{{{state.fx-resource-frontend-hosting.endpoint}}}{{{state.fx-resource-frontend-hosting.indexPath}}}/termsofuse"
+    },
+    "icons": {
+        "color": "color.png",
+        "outline": "outline.png"
+    },
+    "name": {
+        "short": "{{config.manifest.appName.short}}",
+        "full": "{{config.manifest.appName.full}}"
+    },
+    "description": {
+        "short": "{{config.manifest.appName.short}}",
+        "full": "{{config.manifest.appName.short}}"
+    },
+    "accentColor": "#B0A990",
+    "bots": [
+       {
+          "botId": "3ca899e5-a7b9-4410-a8fc-41a907e96e5a",
+          "scopes": [
+             "personal",
+             "team"
+          ],
+          "supportsFiles": false,
+          "isNotificationOnly": false,
+          "commandLists": []
+       }
+    ],
+    "composeExtensions": [
+      {
+        "botId": "3ca899e5-a7b9-4410-a8fc-41a907e96e5a",
+        "commands": [
+          {
+            "id": "searchITCare",
+            "type": "query",
+            "initialRun": true,
+            "context": [ "compose" ],
+            "description": "Search IT Care for ticket",
+            "title": "Search IT Care",
+            "parameters": [
+              {
+                "name": "referenceNo",
+                "title": "Reference Number",
+                "description": "Reference Number of the IT Care Ticket",
+                "inputType": "text"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "configurableTabs": [
+        {
+            "configurationUrl": "{{{state.fx-resource-frontend-hosting.endpoint}}}{{{state.fx-resource-frontend-hosting.indexPath}}}/tabconfigcustomercare",
+            "canUpdateConfiguration": true,
+            "scopes": [
+                "team",
+                "groupchat"
+            ]
+        }
+    ],
+    "staticTabs": [
+        {
+            "entityId": "myCustomerCare",
+            "name": "My Customer Care",
+            "contentUrl": "{{{state.fx-resource-frontend-hosting.endpoint}}}{{{state.fx-resource-frontend-hosting.indexPath}}}/me/customer/browse/1?upn={userPrincipalName}",
+            "scopes": [
+                "personal"
+            ]
+        },
+        {
+          "entityId": "myITCare",
+          "name": "My Requests",
+          "contentUrl": "{{{state.fx-resource-frontend-hosting.endpoint}}}{{{state.fx-resource-frontend-hosting.indexPath}}}/me/it/browse/1?upn={userPrincipalName}",
+          "scopes": [
+              "personal"
+          ]
+      }
+    ],
+    "permissions": [
+        "identity",
+        "messageTeamMembers"
+    ],
+    "validDomains": [ "localhost:5001", "dhsapi20220610084804.azurewebsites.net", "dhsapi20220504133127.azurewebsites.net"],
+    "webApplicationInfo": {
+      "id": "{{state.fx-resource-aad-app-for-teams.clientId}}",
+      "resource": "{{{state.fx-resource-aad-app-for-teams.applicationIdUris}}}"
+    }
+}

@@ -1,0 +1,35 @@
+.mnt-customercase-card {
+
+    width: 20% !important;
+    min-width: 410px;
+    overflow: hidden !important;
+    margin-top: 0.4em !important;
+
+    .inline-label {
+        margin-right: 0.2rem;
+    }
+
+    .card-body-wrapper {
+        background: rgba(0,0,0,0.05);
+        padding: 0.2rem;
+    }
+
+    .description-text {
+        height: 150px;
+        overflow: hidden;
+        span {
+            height: 140px;
+            width: 100%;
+            display: -webkit-box;
+            -webkit-line-clamp: 7;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+        }
+    }
+
+    label-text {
+        margin-top: .3em;
+    }
+}
+
+

@@ -1,0 +1,17 @@
+{
+   "name": "DocumentApprovalApp",
+   "version": "0.0.1",
+   "description": "",
+   "author": "",
+   "scripts": {
+       "test": "echo \"Error: no test specified\" && exit 1",
+       "install:tabs": "cd tabs && npm install",
+       "installAll": "npm install & npm run install:tabs",
+       "dev:mockApi": "node ./mocks/api/server.js"
+   },
+   "devDependencies": {
+       "@microsoft/teamsfx-cli": "0.*",
+       "json-server": "^0.17.0"
+   },
+   "license": "MIT"
+}

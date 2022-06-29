@@ -1,0 +1,13 @@
+.mmt-customercase-details {
+   .ui-flex {
+      margin-bottom: 5px !important;
+   }
+}
+
+.mmt-inputGroup {
+   &.mmt-input-id {
+      .ui-form__message {
+         padding-left: 0px;
+      }
+   }
+}

@@ -1,0 +1,12 @@
+{
+  "dependencies": {
+    "storage1": {
+      "type": "storage",
+      "connectionId": "DefaultConnectionstring"
+    },
+    "storage2": {
+      "type": "storage",
+      "connectionId": "DefaultConnectionstring"
+    }
+  }
+}

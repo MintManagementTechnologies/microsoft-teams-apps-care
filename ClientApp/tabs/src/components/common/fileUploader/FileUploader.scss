@@ -1,0 +1,107 @@
+
+.mmt-fileUploader-input {
+    width: 0.1px;
+    height: 0.1px;
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
+    z-index: -1;
+}
+
+.mmt-link-btn {
+  text-decoration: none;
+}
+
+.mmt-link-btn .ui-box {
+  vertical-align: text-bottom;
+}
+
+
+.mmt-attachment {
+	&:hover {
+		.ui-attachment__action {
+			.mmt-contextual-btn {
+				.ui-icon {
+					color: inherit;
+				}
+			}
+			&:hover {
+				.mmt-contextual-btn {
+					&:not(:hover) {
+						.ui-icon__filled {
+							display: none !important;
+						}
+						.ui-icon__outline {
+							display: block !important;
+						}
+					}
+				}
+			}
+		}
+	}
+
+   .mmt-contextual-btn {
+      justify-content: flex-start;
+   }
+}
+
+.mmt-disabled-label {
+   
+}
+
+// .mmt-fileUploader-input + label {
+//     padding: 0.3rem 1.5rem;
+//     padding-top: 0.4rem;
+//     height: 32px;
+//     min-width: 139px;
+//     // color: rgb(37, 36, 35);
+//     border-radius: 2px;
+//     text-align: center;
+//     font-weight: 600;
+//     cursor: pointer;
+//     box-shadow: RGB(0 0 0 / 50%) 0px 0.2rem 0.4rem -0.075rem;
+//     /* background-color: #3C4B6C; */
+//     margin-bottom: 0.1rem;
+//     user-select: none; /* supported by Chrome and Opera */
+//     -webkit-user-select: none; /* Safari */
+//     -moz-user-select: none; /* Firefox */
+//     -ms-user-select: none; /* Internet Explorer/Edge */
+// }
+// .mmt-fileUploader-input:focus + label,
+// .mmt-fileUploader-input + label:hover {
+//     //color: rgb(37, 36, 35);
+// }
+
+// .mmt-fileUploader-input + label:active {
+//     //color: rgb(37, 36, 35);
+// }
+
+// .mmt-fileUploader-input:disabled + label {
+//     //background-color: rgb(59, 58, 57);
+//     //color: rgb(96, 94, 92);
+//     box-shadow: none;
+//     cursor: default;
+// }
+
+// .mmt-fileUploader-image-container {    
+//     //background-color: #F0F0F0;
+//     margin-bottom: 12px;
+//     max-height: 202px;
+//     min-height: 175px;
+// }
+// .mmt-fileUploader-image {
+//     padding:5px;
+//     margin: auto;
+//     max-block-size: inherit;
+//     /* width: auto !important;
+//     margin: auto;
+//     max-height: 90%; */
+// }
+// /* 
+// mmt-fileUploader-input {
+
+// } */
+// .darkTheme .mmt-fileUploader-input:disabled + label {
+//     //background-color: rgb(45, 44, 44);
+//     //color: #fff;
+// }

@@ -1,0 +1,133 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\abrie\\OneDrive\\Work\\DHS\\microsoft-teams-apps-care\\microsoft-teams-apps-care\\CareApi\\CareApi.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\abrie\\OneDrive\\Work\\DHS\\microsoft-teams-apps-care\\microsoft-teams-apps-care\\CareApi\\CareApi.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\abrie\\OneDrive\\Work\\DHS\\microsoft-teams-apps-care\\microsoft-teams-apps-care\\CareApi\\CareApi.csproj",
+        "projectName": "CareApi",
+        "projectPath": "C:\\Users\\abrie\\OneDrive\\Work\\DHS\\microsoft-teams-apps-care\\microsoft-teams-apps-care\\CareApi\\CareApi.csproj",
+        "packagesPath": "C:\\Users\\abrie\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\abrie\\OneDrive\\Work\\DHS\\microsoft-teams-apps-care\\microsoft-teams-apps-care\\CareApi\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\abrie\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
+          "dependencies": {
+            "AdaptiveCards": {
+              "target": "Package",
+              "version": "[2.7.3, )"
+            },
+            "AdaptiveCards.Templating": {
+              "target": "Package",
+              "version": "[1.2.2, )"
+            },
+            "Azure.Core": {
+              "target": "Package",
+              "version": "[1.24.0, )"
+            },
+            "Azure.Data.Tables": {
+              "target": "Package",
+              "version": "[12.5.0, )"
+            },
+            "Azure.Storage.Blobs": {
+              "target": "Package",
+              "version": "[12.3.0, )"
+            },
+            "Azure.Storage.Files.Shares": {
+              "target": "Package",
+              "version": "[12.1.0, )"
+            },
+            "Azure.Storage.Queues": {
+              "target": "Package",
+              "version": "[12.2.0, )"
+            },
+            "Microsoft.Bot.Builder": {
+              "target": "Package",
+              "version": "[4.16.0, )"
+            },
+            "Microsoft.Bot.Builder.Integration.AspNet.Core": {
+              "target": "Package",
+              "version": "[4.16.0, )"
+            },
+            "Microsoft.Extensions.Azure": {
+              "target": "Package",
+              "version": "[1.0.0, )"
+            },
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[6.3.1, )"
+            },
+            "WindowsAzure.Storage": {
+              "target": "Package",
+              "version": "[9.3.3, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[3.1.10, 3.1.10]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Host.win-x64",
+              "version": "[3.1.23, 3.1.23]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[3.1.0, 3.1.0]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Ref",
+              "version": "[3.1.0, 3.1.0]"
+            }
+          ],
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.201\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

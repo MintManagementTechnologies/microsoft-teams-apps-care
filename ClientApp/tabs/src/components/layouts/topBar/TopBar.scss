@@ -1,0 +1,80 @@
+.mmt-topBar {
+   .ui-segment {
+      padding-top: 5px;
+      padding-bottom: 5px;
+   }
+}
+
+.mmt-topActionsBar {
+   min-height: 40px;
+}
+
+.mmt-appraisalPeriodBar {
+   padding: 1.25em 1em;
+   .mmt-userGoalsHeader-label,
+   .mmt-dateRange-label {
+      color: #fff !important;
+   }
+   .mmt-lineManager-value {
+      color: #a6a6a6 !important;
+      font-size: 16px;
+      margin-top: -5px;
+   }
+
+   .mmt-goalStage-container,
+   .mmt-goalStage-row {
+      height: 100%;
+   }
+}
+
+@media (min-width: 768px) {
+   .mmt-teamGoalsHeader-container {
+      margin-bottom: -14px;
+   }
+}
+
+@media (max-width: 767px) {
+   .mmt-teamGoalsHeader-container {
+      margin-top: 0.5em;
+      justify-content: center !important;
+   }
+
+   .mmt-userGoalsHeader {
+      .mmt-userManagers-container {
+         padding: 10px;
+      }
+      .mmt-goalsStage-container {
+         justify-content: center !important;
+         .ui-flex {
+            justify-content: center !important;
+         }
+      }
+   }
+}
+
+.mmt-dark {
+   .mmt-topBar {
+      .ui-segment {
+         background-color: rgb(31, 31, 31);
+      }
+   }
+}
+
+.mmt-default {
+   .mmt-topBar {
+      .ui-segment {
+         background-color: rgb(245, 245, 245);
+      }
+   }
+}
+
+.tmpClass {
+   .ui-button {
+      opacity: 0;
+
+      &:hover {
+         opacity: 1;
+      }
+   }
+   
+}

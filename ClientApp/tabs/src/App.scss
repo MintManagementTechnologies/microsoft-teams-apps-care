@@ -1,0 +1,65 @@
+// @import "~bootstrap/dist/css/bootstrap-grid.min.css";
+@import "~bootstrap/dist/css/bootstrap.min.css";
+// @import "./components/common/list/List.scss";
+// @import "./components/common/common.scss";
+// @import "./common/styles/fluentColorOverrides.scss";
+// C:\Users\AjacsRSA\TeamsApps\DocumentApprovalApp\tabs\node_modules\bootstrap\scss\_tables.scss
+// .mmt-container-row {
+//    height: 100%;
+//    overflow-y: auto;
+//    margin-bottom: 200px;
+
+//    .mmt-col-content {
+//       overflow-y: overlay;
+//    }
+// }
+
+// .mmt-hidden {
+//    display: none !important;
+// }
+
+#root {
+   .ui-provider {
+      background-color: transparent;
+   }
+}
+
+.mmt-message {
+   padding-top: 10px !important;
+   padding-bottom: 10px !important;
+   // border: 0px !important;
+   &.mmt-template {
+      // max-width: 440px;
+   }
+
+   .ui-alert__icon {
+      min-width: 16px;
+      min-height: 16px;
+   }
+}
+
+.mmt-textArea {
+	.ui-textarea {
+		height: 100px;
+	}
+   &.mmt-textArea-200 {
+      .ui-textarea {
+         height: 200px;
+      }
+   }
+   &.mmt-textArea-150 {
+      .ui-textarea {
+         height: 150px;
+      }
+   }
+   &.mmt-textArea-100 {
+      .ui-textarea {
+         height: 100px;
+      }
+   }
+   &.mmt-textArea-50 {
+      .ui-textarea {
+         height: 55;
+      }
+   }
+}

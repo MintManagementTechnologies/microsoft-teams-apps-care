@@ -1,0 +1,23 @@
+.mmt-layout {
+   // padding: 2em 1em;
+   overflow-x: auto;
+   max-height: calc(100vh - 70px);
+   max-width: 100%;
+   width: 100%;
+}
+
+.mmt-rowGutter {
+   margin-top: 20px !important;
+}
+
+.mmt-rowGutter-10 {
+   margin-top: 10px !important;
+}
+
+.mmt-rowGutter-bottom {
+   padding-bottom: 20px !important;
+}
+
+.mmt-rowGutter-negate {
+   margin-top: -20px !important;
+}

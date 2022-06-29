@@ -1,0 +1,68 @@
+.mmt-actionLog-container {
+   background: #f0f0f0;
+   border-radius: 3px;
+   padding: 25px !important;
+   padding-top: 5px !important;
+
+   .mmt-actionLevel-container {
+      background-color: #ffffff;
+      border: 1px solid #aaadc4;
+      border-radius: 5px;
+      margin-top: 28px;
+      padding-right: 20px !important;
+      padding-left: 20px !important;
+
+      .mmt-actionLevel-title {
+         margin-top: -28px;
+         .mmt-statusPill {
+            min-width: 128px !important;
+         }
+      }
+
+      .mmt-actionLevel {
+         line-height: 24px;
+      }
+
+      &.mmt-opened,
+      &.mmt-opened:hover {
+         border-color: #aaadc4;
+         .mmt-actionLevel {
+            color: #aaadc4;
+         }
+      }
+      &.mmt-resolved,
+      &.mmt-resolved:hover {
+         border-color: #c0da74;
+         .mmt-actionLevel {
+            color: #c0da74;
+         }
+      }
+      &.mmt-inProgress,
+      &.mmt-inProgress:hover {
+         border-color: #ff8d23;
+         .mmt-actionLevel {
+            color: #ff8d23;
+         }
+      }
+      &.mmt-closed,
+      &.mmt-closed:hover {
+         border-color: #669bbc;
+         .mmt-actionLevel {
+            color: #669bbc;
+         }
+      }
+   }
+}
+
+.mmt-default {
+   .mmt-actionLog-container {
+      .mmt-actionLevel-container {
+         .mmt-actionLevel-entry {
+            .mmt-value {
+               // font-size: 14px
+               color: #757575;
+            }
+         }
+      }
+   }
+}

@@ -1,0 +1,14 @@
+[
+   {
+       "resource": "Microsoft Graph",
+       "delegated": [
+           "User.Read",
+           "User.ReadBasic.All",
+           "Presence.Read.All",
+           "Sites.ReadWrite.All",
+           "Channel.ReadBasic.All",
+           "ChannelMember.Read.All"
+       ],
+       "application": ["User.Read.All"]
+   }
+]

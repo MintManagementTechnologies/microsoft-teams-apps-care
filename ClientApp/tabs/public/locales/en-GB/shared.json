@@ -1,0 +1,211 @@
+{
+   "entity": {
+      "case_one": "Case",
+      "case_other": "Cases",
+      "customer_one": "Customer",
+      "customer_other": "Customers",
+      "teamMember_one": "Team Member",
+      "teamMember_other": "Team Members",
+      "request_one": "Request",
+      "request_other": "Requests"
+   },
+   "tab": {
+      "dashboard": {
+         "header": "My Approvals"
+      },
+      "users": {
+         "header": "All Users"
+      }
+   },
+   "form": {
+      "caseNumber": {
+         "label": "Case No" 
+      },
+      "default": {
+         "name": "Form",
+         "label": "Details"
+      },
+      "customerIdNo": {
+         "label": "ID Number",
+         "placeholder": "Search by Customer ID number"
+      },
+      "name": {
+         "label": "Name"
+      },
+      "firstName": {
+         "label": "First Name",
+         "placeholder": "Enter a first name"
+      },
+      "lastName": {
+         "label": "Last Name",
+         "placeholder": "Enter a last name"
+      },
+      "mobileNo": {
+         "label": "Mobile Number",
+         "placeholder": "+27001234567",
+         "errorMessage": "Mobile number is invalid"
+      },
+      "alternativeNo": {
+         "label": "Alternative Number (optional)",
+         "placeholder": "+27001234567",
+         "errorMessage": "Alternative number is invalid"
+      },
+      "physicalAddress": {
+         "label": "Physical Address",
+         "placeholder": "Enter a address"
+      },
+      "town": {
+         "label": "Town",
+         "placeholder": "Select Town"
+      },
+      "postalCode": {
+         "label": "Postal Code",
+         "placeholder": "1234"
+      },
+      "subject": {
+         "label": "Subject",
+         "placeholder": "Enter a subject"
+      },
+      "caseDescription": {
+         "label": "Case Description",
+         "placeholder": "Enter a short description for the case"
+      },
+      "requestDescription": {
+         "label": "Request Description",
+         "placeholder": "Enter a short description for the ticket"
+      },
+      "description": {
+         "label": "Description",
+         "placeholder": "Enter a short description"
+      },
+      "requestor": {
+         "label": "Requester",
+         "placeholder": "Requester"
+      },
+      "technician": {
+         "label": "Technician",
+         "placeholder": "To Be Assigned"
+      },
+      "testedByRequester": {
+         "label": "The resolution has been tested by the requester"
+      },
+      "requestTitle": {
+         "label": "Request Title",
+         "placeholder": "Request Title"
+      },
+      "visible": {
+         "label": "Visible",
+         "placeholder": "Visible"
+      },
+      "ticketClosed": {
+         "label": "Ticket is closed and no further changes allowed"
+      },
+      "caseClosed": {
+         "label": "Case is closed and no further changes allowed"
+      },
+      "ticketCategory": {
+         "label": "Category",
+         "placeholder": "Category"
+      },
+      "priority": {
+         "label": "Priority",
+         "placeholder": "Priority",
+         "value": {
+            "low": "Low",
+            "medium": "Medium",
+            "high": "High",
+            "critical": "Critical"
+         }
+      },
+      "caseType": {
+         "label": "Case Type",
+         "placeholder": "Select Type",
+         "value": {
+            "query": "Query",
+            "request": "Request",
+            "complaint": "Complaint"
+         }
+      },
+      "loggingMethod": {
+         "label": "Logging Method",
+         "placeholder": "Select Method",
+         "value": {
+            "email": "Email",
+            "whatsapp": "Whatsapp",
+            "sms": "SMS",
+            "walkin": "Walk-in"
+         }
+      },
+      "assignTo": {
+         "label": "Assign To",
+         "labelEntity": "Assign To {{entity}}",
+         "pastTenselabel": "Assigned To",
+         "placeholder": "Select Directorate",
+         "memberPlaceholder": "Select Team Member",
+         "created": "Created"
+      },
+      "status": {
+         "label": "Status",
+         "value": {
+            "opened": "Opened",
+            "inProgress": "In Progress",
+            "resolved": "Resolved",
+            "closed": "Closed"
+         }
+      },
+      "progress": {
+         "label": "Progress"
+      },
+      "outcome": {
+         "label": "Outcome",
+         "value": {
+            "pending": "Pending",
+            "approved": "Approved",
+            "rejected": "Rejected",
+            "withdrawn": "Withdrawn",
+            "recommended": "Recommended",
+            "supported": "Supported"
+         },
+         "sentenceValue": {
+            "pending": "{{outcome}} pending from {{displayName}}",
+            "approved": "{{outcome}} by {{displayName}}",
+            "rejected": "{{outcome}} rejected by {{displayName}}"
+         }
+      },
+      "user": {
+         "label": "User"
+      },
+      "comments": {
+         "label": "Comments",
+         "placeholder": "Enter a few comments here"
+      },
+      "referredTo": {
+         "label": "Referred to",
+         "placeholder": "Department / Person?"
+      },
+      "referenceNo": {
+         "label": "Reference Number",
+         "placeholder": "Reference Number"
+      },
+      "invalidForm": {
+         "label": "Please complete all fields to create"
+      }
+   },
+   "personas": {
+      "actor": "Actor",
+      "pa": "Personal Assistant"
+   },
+   "status": {
+      "label": "Status",
+      "opened": "Open Request",
+      "inProgress": "In Progress",
+      "resolved": "Resolved",
+      "closed": "Closed"
+   },
+   "message": {
+      "useTemplate": "Please use the above template to draft the memo",
+      "eSignAttachment": "Please download the document & e-sign. Uploading will override the previous document",
+      "overdue": "The {{docType}} was submitted {{createdDays}} days ago and is overdue by {{overdueDays}} working days.",
+      "caseActionHelpText": "- Click the relevant Status and add a comment"
+   }
+}
